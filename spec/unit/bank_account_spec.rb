@@ -27,20 +27,30 @@ require 'bank_account'
       end
     end
 
+
     describe '#transactions' do
       it 'can accept a transaction' do
         expect(subject.transactions).to be_a(Array)
       end
 
       it 'can add a deposit transaction to list' do
+        subject.deposit(200)
         subject.deposit(100)
-        expect(subject.transactions[0]).to eq([100, 100])
+        expect(subject.transactions[1]).to eq([100, 300])
       end
 
       it 'can add a withdrawal transaction to list' do
         subject.deposit(1000)
         subject.withdraw(100)
         expect(subject.transactions[-1]).to eq([100, 900])
+      end
+    end
+
+    describe '#date_format' do
+      it 'can format a date input' do
+        date = Date.new(2019, 05, 14)
+        allow(Date).to receive(:today).and_return(date)
+        expect(subject.date_format(Date.today)).to eq("14/05/2019")
       end
     end
 end
