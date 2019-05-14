@@ -2,9 +2,9 @@ require 'bank_statement'
 
 
 RSpec.describe BankStatement do
-  describe '#transactions' do
-    it 'can accept a transaction' do
-      expect(subject.transactions).to be_a(Array)
+  describe 'print' do
+    it 'can print the header' do
+      expect(subject.header).to eq("date || credit || debit || balance")
     end
   end
 end
