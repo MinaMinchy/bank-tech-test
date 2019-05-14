@@ -10,5 +10,8 @@ class BankStatement
     @balance += amount
   end
 
+  def withdraw(amount)
+      @balance -= amount
+    end
 
 end
