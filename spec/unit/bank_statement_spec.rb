@@ -1,6 +1,6 @@
 require 'bank_account'
 
- RSpec.describe BankStatement do
+ RSpec.describe BankAccount do
    describe '#balance' do
      it 'can show the total' do
        expect(subject.balance).to eq(0)

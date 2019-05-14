@@ -1,4 +1,4 @@
-class BankStatement
+class BankAccount
 
    attr_reader :balance
 
@@ -11,7 +11,8 @@ class BankStatement
   end
 
   def withdraw(amount)
-      @balance -= amount
+    fail "Insufficient funds" if @balance < amount
+    @balance -= amount
     end
 
 end
