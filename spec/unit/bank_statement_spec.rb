@@ -1,4 +1,4 @@
-require 'bank_statement'
+require 'bank_account'
 
  RSpec.describe BankStatement do
    describe '#balance' do
