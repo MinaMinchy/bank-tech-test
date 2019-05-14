@@ -24,7 +24,7 @@
         null,
         null
       ],
-      "/Users/minci/Project/week-10/bank-tech-test/spec/unit/bank_statement_spec.rb": [
+      "/Users/minci/Project/week-10/bank-tech-test/spec/unit/bank_account_spec.rb": [
         1,
         null,
         1,
@@ -50,8 +50,30 @@
         null,
         null,
         null
+      ],
+      "/Users/minci/Project/week-10/bank-tech-test/spec/unit/bank_statement_spec.rb": [
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/minci/Project/week-10/bank-tech-test/lib/bank_statement.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1557841232
+    "timestamp": 1557841614
   }
 }
